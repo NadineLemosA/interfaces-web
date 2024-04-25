@@ -1,0 +1,81 @@
+/*Esse seletor seleciona todos os elementos 'h1' da página*/
+h1{
+	/*Define o tamanho da fonte de texto*/
+	/*Propriedade: valor*/
+	font-size: 50px;
+	/*Opções: dependendo do sistema opercional, nao há algumas disponiveis; opções de serif bordas*/
+	font-family: Arial, Verdana, sans-serif;
+	/*define a borda do topo, é necessário 3 parametros: cor, espessura e 
+	traçado: none, dashed, dotted, solid, double, groove, inset*/
+	border-top: 3px dashed #CCC;
+	border-left: 3px dotted darkorange;
+	border-right: 3px dotted darkorange;
+	border-bottom: 3px groove darkorange;
+	width: 50%;
+}
+
+/*Seleciona todos os elementos p do html*/
+p{
+	font-size: 14px;
+	font-family: Comic Sans MS, serif;
+	/*Estilo da fonte pode ser normal, oblique e italic*/
+	font-style: italic;
+	/*Espessura: lighter, bold, bolder, normal*/
+	font-weight: lighter;
+}
+
+h2{
+	font-size: 35px;
+	font-style: oblique;
+	/*Variação para fonte: maiusculas com iniciais maiusculas*/
+	font-variant: small-caps;
+	/*cor do texto, blue, darkblue, lightblue */
+	color: darkgreen;
+}
+/* propriedade baseada na classe que seleciona elementos com o id citado*/
+#primeiroParagrafo{
+	font-family: Verdana, serif;
+	/*identação da primeira linha*/
+	text-indent: 30px;
+	/*alinhamento do texto: left, right, center, justify*/
+	text-align: right;
+}
+
+#dourado{
+	color: gold;
+}
+
+/*Seleciona elementos com a classe "especial"*/
+.especial{
+	/*Define detalhes do texto: line-though, underline, overline, none 
+	traçado: dotted, solid, dashed*/
+	text-decoration: underline dotted red;
+}
+
+.cor-fundo{
+	/*quando os 3 primeiros digitos sao iguais aos 3 utimos é possivel abreviar - #000*/
+	background-color: #000000;
+	/*redefine a cor da fonte*/
+	color: #FFF;
+}
+
+/*Definições de imagem devem ser feitas no css e nao no html*/
+/*Define para todas as imagens*/
+img{
+	width: 350px;
+	border: 8px double darkgreen;
+}
+
+/*define para o id da imagem especifica*/
+#festa{
+	height: 232px;
+	width: auto;
+}
+
+
+
+
+
+
+
+

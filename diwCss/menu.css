@@ -1,0 +1,46 @@
+/*seletor que seleciona elemento pelo id*/
+#menu{
+	/*Caxinha lilas*/
+	/*Define a cor de fundo para o elemento*/
+	background-color: #C1A0B9;
+	/*Define os marcadores da lista*/
+	list-style-type: none;
+	/*Define espaçamento interno*/
+	padding: 0;
+	/*Define a largura */
+	width: 200px;
+	/*Deixa o menu no centro*/
+	margin: 0 auto;
+}
+
+/*Seleciona os elementos a que estao dentro de uma tag li 
+que estao dentro de um elemento cujo id é menu*/
+#menu li a:link,
+#menu li a:visited{
+	/*remove o underline*/
+	text-decoration: none;
+	color: #000;
+	/*Alterando o display inline para o qual permite alterar 
+	altura e largura do elemento*/
+	display: inline-block;
+	/*Define a largura*/
+	width: 200px;
+	background-color: hotpink;
+	text-align: center;
+	transition: background-color 1s;
+}
+
+#menu li a:hover,
+#menu li a:active{
+	background-color: blueviolet;
+}
+
+/*Menu horizontal*/
+#menu{
+	width: 610px;
+}
+
+#menu li{
+	/*Permite que os elementos fiquem lado a lado se houver espaço*/
+	display: inline-block;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Segunda Notícia</title>
+
+		<!-- Importação das fontes do google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+
+		<!-- Abre um bloco de código CSS -->
+		<!-- Não é uma boa pratica utilizar no arquivo do HTML -->
+		<style>
+			/*Seleciona todos os elementos P do HTML*/
+			p{
+				/*Define o tamanho de fonte*/
+				font-size: 20px;
+				/*Define a familia da fonte*/
+				/*Cuidar com nomenclaturas com espaço, udar aspas*/
+				font-family: "Jacquard 24";
+			}
+			/*Seleciona todos os elementos UL*/
+			ul{
+				/*Define o estilo da lista/marcadores*/
+				/*none, square, disc, circle */
+				list-style-type: circle;
+				/*Define imagem como marcador*/
+				list-style-image: url(../imagens/home.png);
+			}
+			/*Seleciona os elemetos OL*/
+			ol{
+				border: 1px solid #000;
+			}
+			/*Seleciona todos os elementos LI que estao dentro de um elemento OL - SELETOR COMPOSTO*/
+			/*Não seleciono os marcadores*/
+			ol li{
+				border: 1px dotted purple;
+				/*Define o posicionametno dos marcadores inside e outside*/
+				list-style-position: inside;
+				/*Define estilo da lista*/
+				list-style-type: upper-roman;
+				color: darkgreen;
+			}
+		</style>
+
+	</head>
+	<body>
+		<h1>Senac News!</h1>
+		<hr>
+
+		<a href="pagina1.html">Primeira Notícia</a>
+
+		<a href="#nao-fazer">
+			O que não fazer em caso de tempestade
+		</a>
+
+		<a href="#bairros">Bairros mais afetados</a>
+
+		<a href="#emergencia">Números de emergência</a>
+
+		<hr>
+		<h2>Alerta de tempestade!</h2>
+		<img src="../imagens/caozin.jfif" alt="Cão feliz" width="250">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p style="color: darkgreen; font-size: 12px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h3>O que fazer em caso de tempestade</h3>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h4 id="nao-fazer">O que não fazer em caso de tempestade</h4>
+
+		<!-- Define aonde inicia e termina uma lista
+			não ordenada -->
+		<ul>
+			<!-- li indica aonde incia e termina um item da lista -->
+			<li>Jogar futebol em campo aberto</li>
+			<li>Subir em Poste elétrico</li>
+			<li>Tomar banho em piscina/rio/mar</li>
+		</ul>
+
+		<h3>Tempestade em toda cidade</h3>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h4 id="bairros">Os bairros mais afetados</h4>
+
+		<!-- ol define o início e final da lista ordenada -->
+		<ol>
+			<li>Humaitá</li>
+			<li>Partenon</li>
+			<li>Cidade Baixa</li>
+		</ol>
+
+		<h3>Como buscar ajuda</h3>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h4 id="emergencia">Lista dos números de emergência</h4>
+
+		<!-- dl define o início e final da lista de descrição -->
+		<dl>
+			<!-- DT define o termo de descrição -->
+			<dt>Polícia Militar (190)</dt>
+			<dd>ordem pública</dd>
+			<dd>assaltos, roubos ou agressões</dd>
+
+			<dt>Bombeiros (193)</dt>
+			<dd>incêndio</dd>
+			<dd>resgate</dd>
+		</dl>
+
+	</body>
+</html>

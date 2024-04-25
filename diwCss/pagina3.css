@@ -1,0 +1,48 @@
+h1{
+	/*Define a borde do elemento*/
+	border: 2px solid purple;
+	/*Define o preenchimento do conteudo do elemento 
+	e sua borda(esquerda)*/
+	padding-left: 100px;
+	/*Define o preenchimento do conteudo do elemento 
+	e sua borda(topo)*/
+	padding-top: 20px;
+	/*Define o preenchimento do conteudo do elemento 
+	e sua borda(inferior)*/
+	padding-bottom: 10px;
+	/*Define o preenchimento do conteudo do elemento 
+	e sua borda(direita)*/
+	padding-right: 50px;
+	/*Define a cor de fundo*/
+	background-color: cornflowerblue;
+	/*define a largura do elemento*/
+	width: 500px;
+	/*Define espaçamento fora da borda do elemento(topo)*/
+	margin-top: 50px;
+	/*Define espaçamento fora da borda do elemento(inferior)*/
+	margin-bottom: 55px;
+}
+
+h2{
+	color: darkorange;
+	font-size: 24px;
+	width: 500px;
+	border: 1px solid #000;
+	/*ALINHAMENTO*/
+	text-align: center;
+	/*Define a margem automaticamente para direita e esquerda
+	e 0 para o topo de inferior*/
+	margin: 0 auto;
+	/*Define uma transição de troca de propriedades*/
+	transition: color 2s, font-size 3s;
+}
+
+/*Quando o mouse passa sobre o elemento*/
+h2:hover{
+	color: deeppink;
+}
+
+/*Quando clica sobre o elemento*/
+h2:active{
+	font-size: 28px;
+}

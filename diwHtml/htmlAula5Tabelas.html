@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula Tabelas</title>
+		<!--Importação do arquivo css-->
+		<link rel="stylesheet" type="text/css" href="diwCss/pagina1.css">
+	</head>
+
+	<body>
+		<h1>Senac News!</h1>
+		<hr>
+		<a href="pagina1.html">
+			Primeira Notícia 
+		</a>
+		<a href="pagina2.html">
+			Segunda Notícia
+		</a>
+		<hr>
+
+		<h2 class="especial">Vídeo viral de jacaré dando cambalhota</h2>
+
+		<p id = "primeiroParagrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.<span class="especial cor-fundo">Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.<span id="dourado">Excepteur sint occaecat cupidatat non</span> 
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<img src="img/festa.jpg" alt="Festa canina" height="232">
+
+
+		<h3>Gasto mensal com jacaré</h3>
+
+		<!--Define onde inicia e encerra uma tabela-->
+		<table border="1">
+			<!--Define a área de cabeçalho de uma tabela-->
+			<thead>
+				<!--Define onde inicia e encerra uma linha-->
+				<tr>
+					<!--Define onde inicia e encerra uma coluna de CABEÇALHO-->
+					<th>Produto</th>
+					<th>Quantidade</th>
+					<th>Valor</th>
+				</tr>	
+			</thead>
+			<!--Define área do corpo da tabela-->
+			<tbody>
+				<!--Define linhas-->
+				<tr>
+					<!--Define onde inicia e encerra uma coluna de corpo-->
+					<td>Ração </td>
+					<td>20kg</td>
+					<td>R$250,00</td>
+				</tr>
+				<tr>
+					<td>Veterinário </td>
+					<td>5</td>
+					<td>R$800,00</td>
+				</tr>
+				<tr>
+					<td>Carne </td>
+					<td>30k</td>
+					<td>R$175,00</td>
+				</tr>
+			</tbody>
+			<!--Define a área do rodapé da tabela-->
+			<tfoot>
+				<tr>
+					<td>Total</td>
+					<td>55</td>
+					<td>R$1225,00</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<br>
+
+		<h3>Tabela exemplo 1</h3>
+
+		<table border="1">
+			<tr>
+				<!--EXPANDE COLUNAS-->
+				<td colspan="2"> <!--Atributo diz quantos espaços de coluna a célula deve ocupar-->
+					Linha1 - Coluna 1
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Linha 2 - Coluna 1
+				</td>
+				<td>
+					Linha 2 - Coluna 2
+				</td>
+			</tr>
+		</table>
+
+		<h3>Tabela exemplo 2</h3>
+
+		<table border="3">
+			<tr>
+				<!--EXPANDE LINHAS-->
+				<td rowspan="2"> <!--Atributo diz quantos espaços de linha a célula deve ocupar-->
+					Linha1 - Coluna 1
+				</td>
+				<td>
+					Linha1 - Coluna 2
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Linha 2 - Coluna 2
+				</td>
+			</tr>
+		</table>
+
+		if (x >= 0) {
+			print("Bom dia!");
+		}else {
+			print("Boa noite!")
+		}
+		
+	<!--Preserva a formatação do texto colocado-->
+	<pre>
+	if (x >= 0) {
+			print("Bom dia!");
+		}else {
+			print("Boa noite!")
+		}
+	</pre>
+
+	</body>
+</html>
