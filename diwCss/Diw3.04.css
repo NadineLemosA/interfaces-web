@@ -1,0 +1,8 @@
+/*Esse seletor seleciona todos os elementos 'h1' da página*/
+h1{
+	/*Define o tamanho da fonte de texto*/
+	/*Propriedade: valor*/
+	font-size: 50px;
+	/*Opções/ opções de serif bordas*/
+	font-family: Arial, Verdana, sans-serif;
+}

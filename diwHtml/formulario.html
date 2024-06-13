@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Página de formulários</title>
+</head>
+<body>
+	<!-- O método define como serão enviados os dados para serem processados/enviados
+	GET string anexada a URL (inseguro)
+	POST pelo protocolo http (seguro) -->
+	<form name="form-basico" action="cadastrar.html" method="GET">
+		<!-- Cria uma janela visual para agrupar conteudos do formulário -->
+		<fieldset>
+			<!-- Define titulo/legenda para o fieldset
+			 Tag utilizada somente para esse ancestral -->
+			<legend>Dados Pessoais</legend>
+			<!-- Label aponta somente para um input -->
+			<label for="id-nome">Nome completo: </label>
+			<!-- A tag input nao é fechada, pois insere campos e nao delimita -->
+			<input type="text" name="nome" id="id-nome">
+			<!-- Utilizando de forma inadequada. é utilizado somente em textos -->
+			<br></br>
+			<label for="senha">Senha: </label>
+			<input type="password" name="senha" id="senha">
+		</fieldset>
+
+		<fieldset>
+			<legend>Dados do Pedido:</legend>
+			<!-- Estrutura de seleção unica -->
+
+			<!-- Marca texto não relevante  -->
+			<span>Selecione o sabor da borda: </span> 
+			<input type="radio" name="borda-pizza" value="sem-borda" id="sem-borda">
+			<label for="sem-borda">Sem borda</label>
+			
+			<input type="radio" name="borda-pizza" value="catupiry" id="catupiry">
+			<label for="catupiry">Catupiry</label>
+			<input type="radio" name="borda-pizza" value="chocolate" id="chocolate">
+			<label for="chocolate">Chocolate</label>
+
+			<br></br>
+			<!-- Estrutura de multipla seleção -->
+			
+		</fieldset>
+
+
+		<br>
+		<!-- Botao de envio das informações -->
+		<input type="submit" name="botao" value="Cadastrar">
+		
+	</form>	
+	
+	
+</body>
+</html>
