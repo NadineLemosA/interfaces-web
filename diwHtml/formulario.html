@@ -7,50 +7,154 @@
 </head>
 <body>
 	<!-- O método define como serão enviados os dados para serem processados/enviados
-	GET string anexada a URL (inseguro)
+	GET string anexada a URL (inseguro) - utilizada para teste
 	POST pelo protocolo http (seguro) -->
 	<form name="form-basico" action="cadastrar.html" method="GET">
 		<!-- Cria uma janela visual para agrupar conteudos do formulário -->
 		<fieldset>
 			<!-- Define titulo/legenda para o fieldset
-			 Tag utilizada somente para esse ancestral -->
+			Tag utilizada somente para esse ancestral -->
 			<legend>Dados Pessoais</legend>
 			<!-- Label aponta somente para um input -->
 			<label for="id-nome">Nome completo: </label>
 			<!-- A tag input nao é fechada, pois insere campos e nao delimita -->
-			<input type="text" name="nome" id="id-nome">
+			<!-- placeholder texto auciliar, complementar para campos textuais -->
+			<!-- Autofocus, direciona o cursor no campo para preenchiemnto -->
+			<input type="text" name="nome" id="id-nome" placeholder="Fulana de tal" autofocus>
 			<!-- Utilizando de forma inadequada. é utilizado somente em textos -->
 			<br></br>
 			<label for="senha">Senha: </label>
-			<input type="password" name="senha" id="senha">
+			<!-- Required torna o campo obrigatório -->
+			<input type="password" name="senha" id="senha" required>
 		</fieldset>
-
+		
 		<fieldset>
 			<legend>Dados do Pedido:</legend>
 			<!-- Estrutura de seleção unica -->
-
-			<!-- Marca texto não relevante  -->
+			<!-- Span Marca texto não relevante  -->
 			<span>Selecione o sabor da borda: </span> 
 			<input type="radio" name="borda-pizza" value="sem-borda" id="sem-borda">
 			<label for="sem-borda">Sem borda</label>
-			
 			<input type="radio" name="borda-pizza" value="catupiry" id="catupiry">
 			<label for="catupiry">Catupiry</label>
 			<input type="radio" name="borda-pizza" value="chocolate" id="chocolate">
 			<label for="chocolate">Chocolate</label>
-
+			
 			<br></br>
 			<!-- Estrutura de multipla seleção -->
+			<span>Selecione o sabor da pizza: </span>
+			<input type="checkbox" name="calabresa" value="selecionado" id="calabresa">
+			<label for="calabresa">Calabresa</label>
+			<input type="checkbox" name="strogonof" value="selecionado" id="strogonof">
+			<label for="strogonof">Strogonof</label>
+			<input type="checkbox" name="queijos" value="selecionado" id="queijos">
+			<label for="queijos">Queijos</label>
+			
+			<br></br>
+			<span>Selecione o tamanho da pizza: </span>
+			<!-- Estrutura de seleção unica -->
+			<select name="tamanho">
+				<!-- Selected escolhe a opção que vem selecionada por padrão -->
+				<option value="p">Pequena</option>
+				<option value="m">Média</option>
+				<option value="g" selected>Grande</option>
+				<option value="gg">Familia</option>
+			</select>
+			
+			<br></br>
+			<span>Selecione uma bebida: </span>
+			<!-- Estrutura de seleção unica -->
+			<select name="bebida">
+				<!-- Agrupamento de informações do select por classificação -->
+				<optgroup label="Refrigerantes">
+					<option value="coca">Coca-Cola</option>
+					<option value="fruki">Fruki</option>
+					<option value="grapete">Grappete</option>
+				</optgroup>
+				<optgroup label="Sucos">
+					<option value="uva">Suco de uva</option>
+					<option value="laranja">Suco de laranja</option>
+				</optgroup>
+			</select>
+			
+			<br></br>
+			<span>Observações:</span>
+			<!-- textarea define uma area de texto com varias linhas -->
+			<!-- Cols define tamanho e colunas, rows define o tamanho em linhas, maxlength maximo de caracteres -->
+			<textarea name="obs" cols="30" rows="3" maxlength="120">Digite aqui sua obs</textarea>
 			
 		</fieldset>
-
-
+		
 		<br>
 		<!-- Botao de envio das informações -->
 		<input type="submit" name="botao" value="Cadastrar">
-		
+		<!-- Botao que limpa os dados do formulário -->
+		<input type="reset" value="Apagua tudo!">
+		<!-- Botão de ação via linguagem de programação -->
+		<input type="button" name="bt-generico" value="Faz algo">
+		<!-- Permite o carregamento de arquivo -->
+		<input type="file" name="arquivo">
+		<!-- Permite passar dados, por meio de value, de forma oculta no formulário -->
+		<input type="hidden" name="segredo" value="Oculto">
+		<br>
+		<!-- Permite associar imagem ao botao + CSS inline-->
+		<input type="image" name="btn-img" src="../imagens/botao.png" style="width: 250px;">
 	</form>	
-	
+
+	<form name="form-avancado" action="registrar.html" method="get">
+		<label for="idemail">E-mail: </label>
+		<input type="email" name="email" id="idemail" placeholder="usuario@mail.com">
+
+		<br></br>
+		<label for="site">Informe seu linkedin: </label>
+		<input type="url" name="site" id="site">
+		<br></br>
+
+		<!-- Campo de formulário para seleção numérica -->
+		<label for="idade">Idade: </label>
+		<!-- Disable deixa o campo bloqueado para interação o usuário -->
+		<input type="number" name="idade" id="idade" min="18" max="100" step="10" disabled>
+
+		<br></br>
+		<label for="pontos">Avaliação: </label>
+		<!-- Tambem pode ser usado as propriedades min, max, step,value.. -->
+		<input type="range" name="pontos" id="pontos">
+		<br></br>
+
+		<label for="cor">Adicione a sua cor favorita: </label>
+		<input type="color" name="cor" id="cor">
+
+		<br></br>
+		<label for="cel">Numero de contato: </label>
+		<input type="tel" name="cel" id="cel" placeholder="+55 (dd) 00000-0000">
+		<br></br>
+
+		<label for="data">Data de nascimento: </label>
+		<input type="date" name="data" id="data" min="1900-01-01" max="2024-06-20">
+
+		<br></br>
+		<label for="horario">Selecion o seu horário: </label>
+		<input type="time" name="horario" id="horario">
+		<br></br>
+
+		<!-- Possibilida a pesquisa filtrada por digitaçao -->
+		<label for="campo-catalogo">Selecione seu seriado favorito: </label>
+		<input list="catalogo" name="seriado" id="campo-catalogo">
+		<datalist id="catalogo">
+			<option value="The Walking Dead">
+			<option value="Eu a patroa e as crianças">
+			<option value="Game of thrones">
+			<option value="A Casa do Dragão">
+			<option value="The Big Bang Theory">
+			<option value="Dark">
+			<option value="Stranger Things">
+			<option value="Grimm">
+
+		</datalist>
+
+		<br></br>
+		<input type="submit">
+	</form>
 	
 </body>
 </html>
