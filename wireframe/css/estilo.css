@@ -38,9 +38,63 @@ h1{
 
 nav{
     background-color:orchid;
+    height: 50px;
 }
 
+/* Seleciona itens da lista */  
 nav ul li{
     /* Permite que os elementos fiquem lado a lado se houver espaço */
     display: inline-block;
+    /* Remove os marcadores da lista */
+    list-style-type: none;
+}
+
+/* Tag a possui mais de um estado, antes e apos receber o click */
+nav ul li a:link,
+nav ul li a:visited{
+    /* Remove o sublinhado */
+    text-decoration: none;
+    padding: 8px 10px;
+    background-color: blueviolet;
+    color: #fff;
+    /* Espessura da fonte */
+    font-weight: bold;
+    /* Funciona pois so temos UMA tag a dentro de cada li, isso condiciona o padding da tag 'a'  a seguir os limites da tag nav */
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+    background-color:hotpink
+}
+
+.destaque{
+    background-color: aquamarine;
+    height: 250px;
+}
+
+.destaque figure{
+    height: 200px;
+    width: 35%;
+    margin: 25px 20px;
+    /* Permite qe elementos fiquem lado a lado, alinhado abaixo*/
+    /* display: inline-block; */
+    /* Para uso do float, deve ser definido a area da tag pai, neste caso o destaque. Alinhamento será acima.*/
+    float: left;
+}
+
+.destaque figure img{
+    /* Faz o elemento ocupar a porcentagem de area do local onde ele está, elemento anterior, neste caso o figure */
+    height: 100%;
+    width: 100%;
+}
+
+.destaque p{
+    /* display: inline-block; */
+    width: 58%;
+    float: right;
+    margin-top: 20px;
+    /* Define espaçamento entre linhas de texto. */
+    line-height: 25px;
 }
