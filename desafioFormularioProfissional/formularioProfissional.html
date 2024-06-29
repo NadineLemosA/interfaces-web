@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Profissional</title>
+</head>
+
+<body>
+    <form name="form-profissional" action="recebedados.php" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <label for="campo-nome">Nome completo: </label>
+            <input type="text" name="nome" id="campo-nome" placeholder="Campo obrigatório" autofocus required>
+            <br />
+            <br />
+            
+            <span>Gênero: </span>   
+            <select name="genero">
+                <option selected>---</option>
+                <option>Mulher cisgênero</option>
+                <option>Mulher transgênero</option>
+                <option>Homem cisgênero</option>
+                <option>Homem transgênero</option>
+                <option>Gênero não-binário</option>
+                <option>Agênero</option>
+                <option>Prefiro não informar</option>
+            </select>
+            <br />
+            <br />
+            
+            <label for="campo-data">Data de nascimento: </label>
+            <input type="date" name="data" id="campo-data" max="2024-06-20">
+            <br />
+            <br />
+            
+            <label for="campo-email">Email: </label>
+            <input type="email" name="email" id="campo-email" placeholder="Campo obrigatório" required>
+            <br />
+            <br />
+            
+            <label for="campo-site-pessoal">URL site pessoal: </label>
+            <input type="url" name="site-pessoal" id="campo-site-pessoal">
+            <br />
+            <br />
+            
+            <label for="campo-endereco">Endereço - Rua, número e complemento: </label>
+            <input type="text" name="endereco" id="campo-endereco" placeholder="Campo obrigatório" required>
+            <br />
+            <br />
+            
+            <label for="campo-cidade">Cidade: </label>
+            <input list="cidade" name="cidade" id="campo-cidade">
+            <datalist id="cidade">
+                <option value="Alvorada">Alvorada</option>
+                <option value="Canoas">Canoas</option>
+                <option value="Esteio">Esteio</option>
+                <option value="Gravataí">Gravataí</option>
+                <option value="Novo Hamburgo">Novo Hamburgo</option>
+                <option value="Passo Fundo">Passo Fundo</option>
+                <option value="Pelotas">Pelotas</option>
+                <option value="Porto Alegre">Porto Alegre</option>
+                <option value="São Leopoldo">São Leopoldo</option>
+            </datalist>
+            <br />
+            <br />
+            
+            <label for="campo-contato">Telefone de contato: </label>
+            <input type="tel" name="telefone" id="campo-contato" placeholder="(dd) 00000-0000">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            
+            <span>Áreas de atuação: </span>
+            <input type="checkbox" name="design" value="selecionado" id="campo-desing">
+            <label for="campo-desing">Design</label>
+            <input type="checkbox" name="devFront" value="selecionado" id="devFront">
+            <label for="devFront">Desenvolvimento Front-end</label>
+            <input type="checkbox" name="engSoftware" value="selecionado" id="engSoftware">
+            <label for="engSoftware">Engenharia de Software</label>
+            <input type="checkbox" name="bancoDados" value="selecionado" id="bancoDados">
+            <label for="bancoDados">Banco de Dados</label>
+            <input type="checkbox" name="negocios" value="selecionado" id="negocios">
+            <label for="negocios">Análise de Negócios</label>
+            <input type="checkbox" name="manut" value="selecionado" id="manut">
+            <label for="manut">Manutenção</label>
+            <br />
+            <br />
+            
+            <label for="campo-formacao">Formação: </label>
+            <input list="formacao" name="formacao" id="campo-formacao">
+            <datalist id="formacao">
+                <option value="Ensino Fundamental">Ensino Fundamental</option>
+                <option value="Ensino Médio">Ensino Médio</option>
+                <option value="Ensino Superior">Ensino Superior</option>
+                <option value="Especialização">Especialização</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+            </datalist>
+            <br />
+            <br />
+            
+            <span>Breve histórico profissional: </span>
+            <br />
+            <br />
+            <textarea name="resumo" cols="150" rows="4" maxlength="120">Fale um pouco sobre a sua trajetória</textarea>
+            <br />
+            <br />
+            
+            <label for="curriculo">Anexe seu curriculo: </label>
+            <input type="file" name="arquivo" id="curriculo">
+            <br />
+            <br />
+            
+            <span>Disponibilidade de horas semanais: </span> 
+            <input type="radio" name="dez-horas" value="dez-horas" id="dez-horas">
+            <label for="dez-horas">10</label>
+            <input type="radio" name="vinte-horas" value="vinte-horas" id="vinte-horas">
+            <label for="vinte-horas">20</label>
+            <input type="radio" name="trinta-horas" value="trinta-horas" id="trinta-horas">
+            <label for="trinta-horas">30</label>
+            <input type="radio" name="quarenta-horas" value="quarenta-horas" id="quarenta-horas">
+            <label for="quarenta-horas">40</label>
+            <br />
+            <br />
+        </fieldset>
+        
+        <fieldset>
+            <legend>Agendamento de entrevista</legend>
+            
+            <label for="campo-data-entrevista">Data: </label>
+            <input type="date" name="data" id="campo-data-entrevista" min="2024-06-20" required>
+            <br />
+            <br />
+            
+            <label for="horario-entrevista">Horário: </label>
+            <input type="time" name="horario" id="horario-entrevista" required>
+        </fieldset>
+        
+        <input type="submit" name="botao" value="Enviar">
+    </form>
+</body>
+</html>
