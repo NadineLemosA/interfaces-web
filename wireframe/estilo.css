@@ -91,10 +91,53 @@ nav ul li a:active{
 }
 
 .destaque p{
-    /* display: inline-block; */
+    /* display: inline-block; */ 
     width: 58%;
     float: right;
     margin-top: 20px;
     /* Define espaçamento entre linhas de texto. */
     line-height: 25px;
+}
+
+.meio{
+    height: 500px;
+    background-color:coral;
+}
+
+.noticias{
+    background-color: azure;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.noticia{
+    background-color:bisque;
+    width: 95%;
+    margin: 15px auto;
+    height: 45%;
+}
+
+.noticia h2{
+    margin: 10px;
+}
+
+aside{
+    background-color: cadetblue;
+    width: 30%;
+    float:right;
+    height: 100%;
+}
+
+aside div{
+    width: 70%;
+    background-color: aqua;
+    margin: 30px auto;
+    text-align: center;
+    height: 25%;
+}
+
+footer{
+    text-align: right;
+    height: 40px;
 }
