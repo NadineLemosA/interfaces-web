@@ -1,0 +1,143 @@
+/* O seletor * seleciona cada um dos elementos do HTML. */
+*{
+    /* Zerar as propriedades de espaçamento de todos os elementos */
+    /* Boa prática que proporciona maior controle sobre a pagina. */
+    margin: 0;
+    padding: 0;
+}
+
+/* Define configurações padrões para todo o arquivo */
+/* Não sobrescreve os valored dos "hs" elementos de seção e titulos */
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    background-color:hotpink;
+    /* DEfine uma largura minima e maxima */
+    /* Resolução para ser utilizada no projeto final: 600 a 1200 */
+    min-width: 700px;
+    max-width: 900px;
+    /* Auto mantem o mesmo espaçamento nas laterais */
+    margin: 0 auto;
+    /* Altera os marcadores para ficarem dentro do 'li' */
+    list-style-position: inside;
+}
+
+header{
+    background-color:lightpink;
+    height: 110px;
+}
+
+h1{
+    color:chartreuse;
+    /* Define um espaçamento interno ao redor do elemento */
+    padding: 10px ;
+}
+
+nav{
+    background-color:orchid;
+    height: 50px;
+}
+
+/* Seleciona itens da lista */  
+nav ul li{
+    /* Permite que os elementos fiquem lado a lado se houver espaço */
+    display: inline-block;
+    /* Remove os marcadores da lista */
+    list-style-type: none;
+}
+
+/* Tag a possui mais de um estado, antes e apos receber o click */
+nav ul li a:link,
+nav ul li a:visited{
+    /* Remove o sublinhado */
+    text-decoration: none;
+    padding: 8px 10px;
+    background-color: blueviolet;
+    color: #fff;
+    /* Espessura da fonte */
+    font-weight: bold;
+    /* Funciona pois so temos UMA tag a dentro de cada li, isso condiciona o padding da tag 'a'  a seguir os limites da tag nav */
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+    background-color:hotpink
+}
+
+.destaque{
+    background-color: aquamarine;
+    height: 250px;
+}
+
+.destaque figure{
+    height: 200px;
+    width: 35%;
+    margin: 25px 20px;
+    /* Permite qe elementos fiquem lado a lado, alinhado abaixo*/
+    /* display: inline-block; */
+    /* Para uso do float, deve ser definido a area da tag pai, neste caso o destaque. Alinhamento será acima.*/
+    float: left;
+}
+
+.destaque figure img{
+    /* Faz o elemento ocupar a porcentagem de area do local onde ele está, elemento anterior, neste caso o figure */
+    height: 100%;
+    width: 100%;
+}
+
+.destaque p{
+    /* display: inline-block; */ 
+    width: 58%;
+    float: right;
+    margin-top: 20px;
+    /* Define espaçamento entre linhas de texto. */
+    line-height: 25px;
+}
+
+.meio{
+    height: 500px;
+    background-color:coral;
+}
+
+.noticias{
+    background-color: azure;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.noticia{
+    background-color:bisque;
+    width: 95%;
+    margin: 15px auto;
+    height: 45%;
+}
+
+.noticia h2{
+    margin: 10px;
+}
+
+aside{
+    background-color: cadetblue;
+    width: 30%;
+    float:right;
+    height: 100%;
+}
+
+aside div{
+    width: 70%;
+    background-color: aqua;
+    margin: 30px auto;
+    text-align: center;
+    height: 25%;
+}
+
+footer{
+    text-align: right;
+    height: 40px;
+}
