@@ -31,14 +31,17 @@ h1 {
     font-size: 22px;
     color: #ffffff;
     text-transform: capitalize;
+    /* Define que o elemento tem tendencia a ficar a esquerda */
     float: left;
     /* espaçamento acima do titulo */
     padding-top: 18px;
+    width: 25%;
 }
 
 nav {
     float: right;
     height: 100%;
+    width: 64%;
 }
 
 nav ul {
@@ -56,6 +59,16 @@ nav ul li {
     text-align: center;
     /* Posicionamento vertical do conteudo do item - propriedade de elemento para table */
     vertical-align: middle;
+    /* Para por borda completa com complemento no seletot abaixo */
+    border: 5px solid transparent;
+    /* transition: border 1s; */
+}
+
+/* Quando o mouse estiver sobre */
+nav ul li:hover {
+    /* border: 5px solid #FAA232; */
+    border-top: 5px solid #FAA232;
+    border-bottom: 5px solid #FAA232;
 }
 
 nav ul li a {

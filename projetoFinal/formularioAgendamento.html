@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+
+    <style type="text/css">
+        @import "estilo.css";
+    </style>
+</head>
+
+
+<body id="body-form">
+    <form name="form-agendamento" method="POST" id="form-agenda">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="campo-nome">Nome completo: </label>
+            <input type="text" name="nome" id="campo-nome" placeholder="Campo obrigatório" autofocus required>
+            <br />
+            <br />
+
+            <label for="campo-data-nasc">Data de nascimento: </label>
+            <input type="date" name="data" id="campo-data-nasc" max="2024-06-20">
+            <br />
+            <br />
+
+            <label for="campo-email">Email: </label>
+            <input type="email" name="email" id="campo-email" placeholder="Campo obrigatório" required>
+            <br />
+            <br />
+
+            <label for="campo-contato">Telefone de contato: </label>
+            <input type="tel" name="telefone" id="campo-contato" placeholder="(dd) 00000-0000">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Agendamento</legend>
+
+            <span>Serviço que deseja agendar: </span>
+            <input type="checkbox" name="corte" value="selecionado" id="campo-corte">
+            <label for="campo-corte">Corte</label>
+            <input type="checkbox" name="coloracao" value="selecionado" id="campo-coloracao">
+            <label for="campo-coloracao">Coloração</label>
+            <input type="checkbox" name="reconstrucao" value="selecionado" id="campo-reconstrucao">
+            <label for="campo-reconstrucao">Reconstrução</label>
+            <br />
+            <br />
+
+            <label for="campo-cabelo">Escolha o tamanho em que seu cabelo mais se enquada: </label>
+            <input list="tamanho" name="tamanho" id="campo-cabelo">
+            <datalist id="tamanho">
+                <option value="Muito longo">Muito longo</option>
+                <option value="Longo">Longo</option>
+                <option value="Médio">Médio</option>
+                <option value="Curto">Curto</option>
+                <option value="Muito curto">Muito curto</option>
+            </datalist>
+            <br />
+            <br />
+
+            <label for="campo-data">Datas disponíveis: </label>
+            <input type="date" name="data" id="campo-data" min="2024-08-20" required>
+            <br />
+            <br />
+
+            <label for="horario">Horário disponíveis: </label>
+            <input type="time" name="horario" id="horario" required>
+        </fieldset>
+        <br>
+        <input type="submit" name="botao" value="Agendar" class="botao-envia-formulario">
+    </form>
+</body>
+
+</html>

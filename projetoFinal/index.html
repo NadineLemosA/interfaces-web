@@ -1,31 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Alterna Beauty</title>
 
-    <style type="text/css">    
-      @import "estilo.css";
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <title>Alterna Beauty</title>
 
-    <style>   
-      @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-    </style>
-  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <body>
-    <header>
-        <h1>Alterna Beauty</h1>
-    </header>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
 
+  <style type="text/css">
+    @import "estilo.css";
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Alterna Beauty</h1>
+  </header>
+
+  <main>
     <nav>
-        <ul>
-            <li><a href="">Resultados</a></li>
-            <li><a href="">Nossos serviços</a></li>
-            <li><a href="">Nossos clientes</a></li>
-            <li><a href="">Contato</a></li>
-        </ul>
+      <ul>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#servicos">Nossos serviços</a></li>
+        <li><a href="#depoimentos">Nossos clientes</a></li>
+        <li><a href="#final">Contato</a></li>
+      </ul>
     </nav>
 
-  </body>
+    <section id="resultados">
+      <div class="autoplay">
+        <div class="imgCarousel">
+          <img src="imagens/azullilas.jpg" alt="azullilas">
+        </div>
+        <div class="imgCarousel">
+          <img src="imagens/azulrosa.jpg" alt="azulrosa">
+        </div>
+        <div class="imgCarousel">
+          <img src="imagens/laranja.jpg" alt="laranja">
+        </div>
+        <div class="imgCarousel">
+          <img src="imagens/roxo.jpg" alt="roxo">
+        </div>
+        <div class="imgCarousel">
+          <img src="imagens/verderosa.jpg" alt="verderosa">
+        </div>
+        <div class="imgCarousel">
+          <img src="imagens/violeta.jpg" alt="violeta">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h3>Nossos serviços</h3>
+      <div class="conteiner-agenda-servico">
+        <h4>Corte</h4>
+        <p>De "tirar só as pontinhas" até cortes complexos para diversos tamanhos de cabelo. Clique em agendar para ver
+          horários disponíveis.</p>
+        <a href="formularioAgendamento.html" class="btn btn-dark">Agendar</a>
+      </div>
+
+      <div class="conteiner-agenda-servico">
+        <h4>Coloração</h4>
+        <p>O mundo de cores é na Alterna Beauty. Escolhe a cor que a gente realiza. :) Clique em agendar para ver
+          horários disponíveis. </p>
+        <a href="formularioAgendamento.html" class="btn btn-dark">Agendar</a>
+      </div>
+
+      <div class="conteiner-agenda-servico">
+        <h4>Reconstrução</h4>
+        <p>Pra dar aquele up pós descoloração, ou um shinezinho pra revigorar os desgastes do dia a dia. Clique em
+          agendar para ver
+          horários disponíveis. </p>
+        <a href="formularioAgendamento.html" class="btn btn-dark">Agendar</a>
+      </div>
+    </section>
+
+    <section id="depoimentos">
+      <h3>Depoimentos dos cientes</h3>
+      <div class="conteiner-depoimentos">
+        <h5>Renata Gomes</h5>
+        <p>"Fui extremamente bem atendida. O local é aconchegante e o pessoal é muito cuidadoso."</p>
+      </div>
+
+      <div class="conteiner-depoimentos">
+        <h5>Mariah Lopes</h5>
+        <p>"Simplesmente o melhor salão dessa cidade. O meu cabelo ficou maravilhoso. Unico lugar que eu confio de olhos
+          fechados."</p>
+      </div>
+
+      <div class="conteiner-depoimentos">
+        <h5>Martina Aquino</h5>
+        <p>"Fizeram tudo exatamente como eu pedi. As cores que eles conseguem fazer sao imporssionantes. Virei cliente
+          fiel."</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="final">
+    <div id="texto-nome">
+      <h5>Desenvolvido por</h5>
+      <p>Nadine Aquino</p>
+    </div>
+
+    <div>
+      <iframe id="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.8920905559617!2d-51.22193142474839!3d-30.03995353106772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978559b9a32d7%3A0x4d51762b6452acfa!2sR.%20Gen.%20Lima%20e%20Silva%2C%20Porto%20Alegre%20-%20RS%2C%2090450-190!5e0!3m2!1spt-BR!2sbr!4v1722305805477!5m2!1spt-BR!2sbr"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./slick.js"></script>
+</body>
+
 </html>
